@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'ls'
-                sh 'tar -czf bro.tar.gz .'
+                sh 'tar -czf bro.tar.gz README.md'
             }
         }
         
