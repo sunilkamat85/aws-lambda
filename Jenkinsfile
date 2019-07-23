@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh label: '', script: 'ls'
+                sh 'ls'
+                sh 'tar -czf bro.tar.gz .'
             }
         }
         
